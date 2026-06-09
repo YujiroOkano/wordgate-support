@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordGate</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #00b8c7;
+      --bg: #0b0f12;
+      --fg: #f6f8fa;
+      --muted: #9ba7b4;
+      --panel: #151b20;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+    h1 {
+      font-size: clamp(36px, 8vw, 64px);
+      line-height: 1.05;
+      margin: 0 0 16px;
+      letter-spacing: 0;
+    }
+    p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    a {
+      color: var(--accent);
+    }
+    nav a {
+      border: 1px solid color-mix(in srgb, var(--accent), transparent 50%);
+      border-radius: 8px;
+      padding: 10px 14px;
+      text-decoration: none;
+      background: var(--panel);
+    }
+    section {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid #26313a;
+    }
+    li {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>WordGate</h1>
+    <p>WordGateは、スマホを開く前の数分を英単語学習に変えるiOSアプリです。TOEIC・英検の目標に合わせて単語を学び、テストに合格すると選択したアプリを利用できます。</p>
+    <nav>
+      <a href="./support.html">サポート</a>
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="https://github.com/YujiroOkano/wordgate-vocabulary">語彙CSV</a>
+    </nav>
+    <section>
+      <h2>主な機能</h2>
+      <ul>
+        <li>TOEICスコア・英検級を目標にした英単語学習</li>
+        <li>英語、日本語訳、例文、端末内音声による学習</li>
+        <li>忘却曲線に基づく復習タイミング</li>
+        <li>Screen Time APIによるユーザー選択アプリの一時制限</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
