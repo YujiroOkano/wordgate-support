@@ -3,84 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="サキタンゴは、スマホを開く瞬間を英単語学習に変えるiOSアプリです。">
   <title>サキタンゴ</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --accent: #00b8c7;
-      --bg: #0b0f12;
-      --fg: #f6f8fa;
-      --muted: #9ba7b4;
-      --panel: #151b20;
-    }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.7;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 56px 20px;
-    }
-    h1 {
-      font-size: clamp(36px, 8vw, 64px);
-      line-height: 1.05;
-      margin: 0 0 16px;
-      letter-spacing: 0;
-    }
-    p {
-      color: var(--muted);
-      font-size: 17px;
-    }
-    nav {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
-    a {
-      color: var(--accent);
-    }
-    nav a {
-      border: 1px solid color-mix(in srgb, var(--accent), transparent 50%);
-      border-radius: 8px;
-      padding: 10px 14px;
-      text-decoration: none;
-      background: var(--panel);
-    }
-    section {
-      margin-top: 40px;
-      padding-top: 28px;
-      border-top: 1px solid #26313a;
-    }
-    li {
-      margin: 8px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="./site.css">
 </head>
-<body>
-  <main>
-    <h1>サキタンゴ</h1>
-    <p>サキタンゴは、スマホを開く前の数分を英単語学習に変えるiOSアプリです。TOEIC・英検・TOEFL iBT・IELTSの目標に合わせて単語を学び、ミッションに合格すると選択したアプリを一時的に利用できます。</p>
-    <nav>
-      <a href="./support.html">サポート</a>
-      <a href="./privacy.html">プライバシーポリシー</a>
-      <a href="./terms.html">EULA</a>
-      <a href="https://github.com/YujiroOkano/wordgate-vocabulary">語彙CSV</a>
-    </nav>
-    <section>
-      <h2>主な機能</h2>
-      <ul>
-        <li>TOEICスコア・英検級・TOEFL iBT・IELTSを目標にした英単語学習</li>
-        <li>英語、日本語訳、例文、端末内音声による学習</li>
-        <li>忘却曲線に基づく復習タイミング</li>
-        <li>Screen Time APIによるユーザー選択アプリの一時制限</li>
-        <li>朝のアラーム、日中の解禁ミッション、夜の弱点復習</li>
-      </ul>
-    </section>
+<body data-page="index">
+  <header class="site-header"><div class="header-inner"><a class="brand" href="./index.html"><span class="brand-mark">S</span><span>サキタンゴ</span></a><select id="language-picker" aria-label="Language"></select></div></header>
+  <main id="content">
+    <span class="eyebrow">日本で企画・設計</span>
+    <h1>先に3問。あとでSNS。</h1>
+    <p class="lede">スマホを開く瞬間を、忘れかけた英単語の復習タイミングに変えます。</p>
   </main>
+  <footer><div class="footer-inner"><div class="footer-links" id="footer-links"></div><p id="footer-note"></p></div></footer>
+  <script src="./site-i18n.js"></script>
 </body>
 </html>
